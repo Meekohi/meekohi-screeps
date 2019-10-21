@@ -3,29 +3,25 @@
 // memory extension samples
 interface CreepMemory {
   job_id: string | null;
-}
-
-declare enum JobType {
-  Harvest
+  target_id?: string;
 }
 
 interface Job {
   id: string;
-  type: JobType;
-  startingPos: RoomPosition;
+  type: string;
   priority: number;
   creep_id: string | null;
-}
-
-interface MiningJob extends Job {
-  source_id: string;
+  startingPos?: RoomPosition;
+  targetPos?: RoomPosition;
+  source_id?: string;
+  target_id?: string;
+  llama?: string;
 }
 
 interface Memory {
   uuid: number;
   log: any;
   sources: Source[];
-  miningJobs: MiningJob[];
   jobs: Job[];
 }
 

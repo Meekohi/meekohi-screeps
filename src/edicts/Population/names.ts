@@ -5,7 +5,7 @@ export default [
   "Toad",
   "Yoshi",
   "Bowser",
-  "Bowser Jr.",
+  "Bowser Jr",
   "Koopalings",
   "Princess Daisy",
   "Wario",
